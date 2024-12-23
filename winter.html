@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Winter - AESPA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header {
+				background: url('images/winter-background.jpg') no-repeat center center;
+				background-size: cover;
+				color: white;
+				text-align: center;
+				padding: 200px 20px;
+			}
+			#header h1 {
+				font-size: 4rem;
+				font-weight: 900;
+			}
+			#header p {
+				font-size: 1.5rem;
+			}
+			body, h1, h2, h3, h4, h5, h6, p {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Header -->
+		<section id="header">
+			<h1>Winter</h1>
+			<p>Vocalist and Dancer of AESPA</p>
+		</section>
+
+		<!-- Main Content -->
+		<section class="main style1">
+            <div class="container">
+                <header class="major">
+                    <h2>About Winter</h2>
+                </header>
+                <p>Winter is a vocalist and dancer in AESPA. Her charming voice captivates fans around the world.</p>
+                <h3>Performance Videos</h3>
+                <!-- 첫 번째 유튜브 영상 -->
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/74fSrrQM5hA" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <!-- 두 번째 유튜브 영상 -->
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/HFk6kDd56lI" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        
+                <!-- Google Maps Script -->
+                <script>
+                    function initMap() {
+                   var location = { lat: 35.1796, lng: 129.0756 };
+                   var map = new google.maps.Map(document.getElementById('map'), {
+                       zoom: 10,
+                       center: location
+                   });
+           
+                   var marker = new google.maps.Marker({
+                       position: location,
+                       map: map,
+                       title: "Seoul, South Korea"
+                   });
+               }
+           </script>
+           <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgh1o3rX-AWlAc0vmbg1AF7vjXi4LDGi8&callback=initMap"></script>
+           
+		<!-- Footer -->
+		<section id="footer" style="background-color: white;">
+			<ul class="icons">
+				<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+			</ul>
+		</section>
+
+	</body>
+</html>

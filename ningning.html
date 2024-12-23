@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ningning - AESPA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header {
+				background: url('images/ningning-background.jpg') no-repeat center center;
+				background-size: cover;
+				color: white;
+				text-align: center;
+				padding: 200px 20px;
+			}
+			#header h1 {
+				font-size: 4rem;
+				font-weight: 900;
+			}
+			#header p {
+				font-size: 1.5rem;
+			}
+			body, h1, h2, h3, h4, h5, h6, p {
+				font-weight: bold;
+			}
+			img {
+				width: 500px;
+				height: auto;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Header -->
+		<section id="header">
+			<h1>Ningning</h1>
+			<p>Main Vocalist of AESPA</p>
+		</section>
+
+		<!-- Main Content -->
+		<section class="main style1">
+			<div class="container">
+				<header class="major">
+					<h2>About Ningning</h2>
+				</header>
+				<p>Ningning is the main vocalist of AESPA. Her powerful voice leaves a lasting impression.</p>
+				<h3>Performance Videos</h3>
+                <!-- 첫 번째 썸네일 링크 -->
+                <a href="https://youtu.be/aWh8j7rcQNE?si=YAK_sS8aK04gSi_k" target="_blank">
+                <img src="https://img.youtube.com/vi/aWh8j7rcQNE/maxresdefault.jpg" alt="Ningning Video 1">
+                </a>
+
+                <!-- 두 번째 썸네일 링크 -->
+                <a href="https://youtu.be/6klLsuPnrko?si=x-M93Gei1TaeKvih" target="_blank">
+                <img src="https://img.youtube.com/vi/6klLsuPnrko/maxresdefault.jpg" alt="Ningning Video 2">
+                </a>
+
+			</div>
+		</section>
+ 
+        <!-- Google Maps Script -->
+        <script>
+            function initMap() {
+           var location = { lat: 45.8038, lng: 126.5350 }; 
+           var map = new google.maps.Map(document.getElementById('map'), {
+               zoom: 10,
+               center: location
+           });
+   
+           var marker = new google.maps.Marker({
+               position: location,
+               map: map,
+               title: "Seoul, South Korea"
+           });
+       }
+   </script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgh1o3rX-AWlAc0vmbg1AF7vjXi4LDGi8&callback=initMap"></script>
+   
+		<!-- Footer -->
+		<section id="footer" style="background-color: white;">
+			<ul class="icons">
+				<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+			</ul>
+		</section>
+
+	</body>
+</html>

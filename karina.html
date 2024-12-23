@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Karina - AESPA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header {
+				background: url('images/karina-background.jpg') no-repeat center center;
+				background-size: cover;
+				color: white;
+				text-align: center;
+				padding: 200px 20px;
+			}ㅁ
+			#header h1 {
+				font-size: 4rem;
+				font-weight: 900;
+			}
+			#header p {
+				font-size: 1.5rem;
+			}
+
+			body, h1, h2, h3, h4, h5, h6, p {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Header -->
+		<section id="header">
+			<h1>Karina</h1>
+			<p>Leader of AESPA</p>
+		</section>
+
+		<!-- Main Content -->
+		<section class="main style1">
+			<div class="container">
+				<header class="major">
+					<h2>About Karina</h2>
+				</header>
+				<p>Karina is the leader of AESPA. Known for her stunning visuals and powerful performances, she has captivated fans worldwide.</p>
+				<h3>Performance Videos</h3>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/g6Z_9w-2OuQ" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+              <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/tbg3QAu-GnI?si=XTLSYdGftpImryHy" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<section id="footer" style="background-color: white;">
+			<ul class="icons">
+				<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+			</ul>
+		</section>
+        
+        <!-- Google Maps Script -->
+        <script>
+         function initMap() {
+        var location = { lat: 37.5665, lng: 126.9780 }; // 서울 좌표
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: location
+        });
+
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: "Seoul, South Korea"
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgh1o3rX-AWlAc0vmbg1AF7vjXi4LDGi8&callback=initMap"></script>
+</body>
+</html>
