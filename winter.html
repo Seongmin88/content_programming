@@ -4,12 +4,12 @@
 		        <!-- Google tag (gtag.js) -->
     		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQT7Y2DLNB"></script>
     		<script>
-       		 	window.dataLayer = window.dataLayer || [];
-       		 	function gtag(){dataLayer.push(arguments);}
-        		gtag('js', new Date());
+        		 	window.dataLayer = window.dataLayer || [];
+        		 	function gtag(){dataLayer.push(arguments);}
+        			gtag('js', new Date());
 
-        		gtag('config', 'G-FQT7Y2DLNB');
-   		 </script>
+        			gtag('config', 'G-FQT7Y2DLNB');
+    		 </script>
 
 		<title>Winter - AESPA</title>
 		<meta charset="utf-8" />
@@ -36,7 +36,7 @@
 			#map {
         			height: 400px;
         			width: 100%;
-     		 	}
+      			}
 		</style>
 	</head>
 	<body>
@@ -73,6 +73,8 @@
         </section>
         
                 <!-- Google Maps Script -->
+                <h1>Winter's Hometown</h1>
+                <div id="map"></div>
                 <script>
                     function initMap() {
                    var location = { lat: 35.1796, lng: 129.0756 };
@@ -84,7 +86,7 @@
                    var marker = new google.maps.Marker({
                        position: location,
                        map: map,
-                       title: "Seoul, South Korea"
+                       title: "Busan, South Korea"
                    });
                }
            </script>
